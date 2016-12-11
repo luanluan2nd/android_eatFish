@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.eatFish.MainActivity">
+
+    <com.example.eatFish.FishView
+        android:id="@+id/fishView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+       <TextView
+        android:id="@+id/start"
+        android:text="开始游戏"
+        android:background="@drawable/btn"
+        android:textSize="40sp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:layout_width="180sp"
+        android:layout_height="60sp"/>
+       
+      <TextView
+        android:visibility="gone"
+        android:id="@+id/score"
+        android:text=""
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+  		
+    <LinearLayout
+        android:id="@+id/gamestop"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/finalscore"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textSize="60sp"
+            android:textColor="#FFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:background="@drawable/btn"
+            android:text="再来一次"
+            android:textColor="#FFF"
+            android:id="@+id/restart"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="180sp"
+            android:layout_height="60sp"/>
+    </LinearLayout>
+
+</RelativeLayout>
+
